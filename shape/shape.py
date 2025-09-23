@@ -6,15 +6,15 @@ __version__ = "1.0.0"
 from abc import ABC, abstractmethod
 
 class Shape(ABC):
-   """An abstract base class for all shapes."""
+    """An abstract base class for all shapes."""
 
-   def __init__(self, color: str) -> None:
-    """
-        Set up the shape with a color.
-    """
-    if not color.strip():
-        raise ValueError("Color cannot be blank.")
-    self._color = color.strip()
+    def __init__(self, color: str) -> None:
+        """
+            Set up the shape with a color.
+        """
+        if not color.strip():
+            raise ValueError("Color cannot be blank.")
+        self._color = color.strip()
 
     def __str__(self) -> str:
         """
@@ -28,7 +28,7 @@ class Shape(ABC):
         Calculate the area of the shape.
         """
         pass
-    
+
     @abstractmethod
     def calculate_perimeter(self) -> float:
         """ Calculate the perimeter of the shape.

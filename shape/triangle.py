@@ -4,7 +4,7 @@ __author__ = "Gunkar singh"
 __version__ = "1.0.0"
 
 from math import sqrt
-from shape import Shape
+from shape.shape import Shape
 
 class Triangle(Shape):
     """Represents a triangle shape with three sides."""
@@ -54,7 +54,7 @@ class Triangle(Shape):
             str: A message that describes the triangle’s color and the lengths of its three sides.
         """
        
-        return (super().__str__() +
+        return(super().__str__() +
                 f"\nThis triangle has three sides with lengths of "
                 f"{self.__side_1}, {self.__side_2} and {self.__side_3} centimeters.")
 
@@ -75,3 +75,15 @@ class Triangle(Shape):
               float: The total perimeter of the triangle.
         """
         return self.__side_1 + self.__side_2 + self.__side_3
+
+    @property
+    def side_1(self):
+        return self.__side_1
+
+    @property
+    def side_2(self):
+        return self.__side_2
+
+    @property
+    def side_3(self):
+        return self.__side_3
