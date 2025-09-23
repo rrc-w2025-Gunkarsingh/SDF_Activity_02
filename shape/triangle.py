@@ -1,4 +1,4 @@
 """This module defines the Triangle class."""
 
-__author__ = ""
-__version__ = ""
+__author__ = "Gunkar singh"
+__version__ = "1.0.0"
