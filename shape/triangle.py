@@ -69,8 +69,13 @@ class Triangle(Shape):
         """
         Find the area of the triangle using Heron's formula.
 
+        Heron's formula states that the area of a triangle whose sides have
+        lengths a, b, and c is:
+            Area = √(s(s-a)(s-b)(s-c))
+            where s is the semi-perimeter of the triangle:
+            s = (a + b + c) / 2 
         Returns:
-            float: The total area of the triangle.
+            float: The area of the triangle.
         """
         semi_perimeter = (
             self.__side_1 + self.__side_2 + self.__side_3
@@ -85,24 +90,11 @@ class Triangle(Shape):
 
     def calculate_perimeter(self) -> float:
         """
-        Find the perimeter of the triangle.
-
-        Returns:
-            float: The total perimeter of the triangle.
+        Find the perimeter of the triangle.calculate the perimeter of the triangle.
+        returns:
+            float: The perimeter of the triangle.
+            
         """
         return self.__side_1 + self.__side_2 + self.__side_3
 
-    @property
-    def side_1(self) -> int:
-        """int: Length of the first side in centimeters."""
-        return self.__side_1
-
-    @property
-    def side_2(self) -> int:
-        """int: Length of the second side in centimeters."""
-        return self.__side_2
-
-    @property
-    def side_3(self) -> int:
-        """int: Length of the third side in centimeters."""
-        return self.__side_3
+  

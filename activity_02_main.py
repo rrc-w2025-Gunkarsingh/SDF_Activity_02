@@ -5,7 +5,6 @@ classes.
 __author__ = "Gunkat singh"
 __version__ = "1.0.0"
 __credits__ = ""
-
 # Import all classes from shape package
 from shape import *
 
